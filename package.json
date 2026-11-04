@@ -1,0 +1,53 @@
+{
+  "name": "dsh-open-file-on-double-click",
+  "version": "1.1.0",
+  "description": "Open a file link or a web link in DeepSeek Harness with its default application by double-clicking it, like a desktop shortcut.",
+  "license": "MIT",
+  "author": "dsh-open-file-on-double-click contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hello-world-pro/DSH-open-file-on-double-click.git"
+  },
+  "homepage": "https://github.com/Hello-world-pro/DSH-open-file-on-double-click#readme",
+  "bugs": {
+    "url": "https://github.com/Hello-world-pro/DSH-open-file-on-double-click/issues"
+  },
+  "type": "module",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "file",
+    "double-click",
+    "open",
+    "shortcut"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
+

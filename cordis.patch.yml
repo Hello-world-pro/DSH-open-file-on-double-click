@@ -1,0 +1,3 @@
+- insert:
+    - id: open-file-on-double-click
+      name: "dsh-open-file-on-double-click"
